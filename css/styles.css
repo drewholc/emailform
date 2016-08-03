@@ -1,0 +1,279 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*===========================NAVBAR=========================*/
+.navbar {
+  z-index: 30;
+  width:100%;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border:none;
+}
+
+.navbar-header {
+  color: #cfccd1;
+  margin-top: 5px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-nav>.active>a:after {
+  background-color: rgba(0, 0, 0, .5) !important;
+  color: #cfccd1;
+  font-size: 12px;
+  padding: 10px;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #cfccd1;
+  font-size: 10px;
+  padding: 10px;
+}
+/*===========================END OF NAVBAR=========================*/
+
+/*===========================JUMBOTRON=========================*/
+.jumbotron {
+  height: 45em;
+  background-image: url('../img/background-logo2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 0px !important;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-family: 'Bungee', cursive;
+  margin-top: 1em;
+}
+
+h2 {
+  font-family: 'Bungee', cursive;
+  font-size: 40px;
+}
+
+.jumbotron p {
+  font-size: 11px;
+}
+
+.animation_typing{
+  background-color: transparent;
+  margin-top: 5em;
+}
+
+.css-typing {
+    color: #FFFFFF;
+    font-size: 10px;
+    width: 20em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 2s steps(60, end);
+    animation: type 2s steps(60, end);
+}
+.pillar_sign{
+  animation: blink 1s infinite;
+}
+@keyframes blink{
+  to{opacity: .0;}
+}
+@keyframes type{
+    from { width: 0; }
+}
+.css-typing:nth-child(2){
+  animation: type2 4s steps(60, end);
+}
+.css-typing:nth-child(3){
+  animation: type3 6s steps(60, end);
+}
+.css-typing:nth-child(4){
+  animation: type4 8s steps(60, end);
+}
+.css-typing:nth-child(5){
+  animation: type5 10s steps(60, end);
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+@keyframes type3{
+  0%{width: 0;}
+  65%{width: 0;}
+  100%{ width: 100; }
+}
+@keyframes type4{
+  0%{width: 0;}
+  75%{width: 0;}
+  100%{ width: 100; }
+}
+@keyframes type5{
+  0%{width: 0;}
+  85%{width: 0;}
+  100%{ width: 100; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+/*===========================END OF JUMBOTRON=========================*/
+
+/*==========================ABOUT=====================================*/
+#about {
+  height:40em;
+}
+
+.fa {
+  font-size: 54px;
+}
+
+.aboutRow {
+  margin-top: 30px;
+  font-weight:bold;
+}
+
+.schoolWork {
+  margin-top: 60px;
+}
+
+hr {
+  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 18px 0;
+}
+
+.buts {
+  margin-top: 1.5em;
+}
+
+.btn-default, {
+  background-color: white;
+  border-color: black;
+  color: black;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default:after {
+  background-color: white;
+}
+
+.btn-default span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-default span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: black;
+}
+
+.btn-default:hover span {
+  padding-right: 25px;
+  color: black;
+}
+
+.btn-default:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn:focus, .btn:active, .btn:visited {
+      outline: 0px auto -webkit-focus-ring-color;
+}
+
+.btn-default:focus, .btn-default:active, .btn-default:visited {
+  background-color: #fff;
+  outline: 0px;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+}
+
+/*==========================END OF ABOUT==============================*/
+
+/*==========================PROJECTS=================================*/
+#projects {
+  height:60em;
+}
+
+  .col-centered {
+  float:none;
+  margin: 0 auto;
+}
+
+.thumbs {
+  margin-top: 60px;
+}
+
+.thumbnail {
+  border-radius: 0px;
+  border: 0px;
+  padding: 10px;
+}
+
+.bw {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+.bw:hover {
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+.thumbnail .caption {
+  padding-left: 0px;
+}
+/*==========================END OF PROJECTS==========================*/
+
+/*==========================FOOTER===================================*/
+.footer {
+  height: 46em;
+  background-image: url('../img/blur-background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 0px !important;
+  color: #FFFFFF;
+}
+
+.kais {
+  border-radius: 100%;
+  margin-top: 25px;
+}
+
+a, a:hover, a:active, a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+
+.icons {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+}
+
+#contact {
+  margin-top: 5em;
+}
+
+/*========================END OF FOOTER=============================*/
